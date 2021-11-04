@@ -276,7 +276,7 @@ Transform:
   - {fileID: 1414815218}
   - {fileID: 428481867}
   m_Father: {fileID: 1679986739}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &115312037
 PrefabInstance:
@@ -460,8 +460,6 @@ GameObject:
   - component: {fileID: 259065174}
   - component: {fileID: 259065173}
   - component: {fileID: 259065172}
-  - component: {fileID: 259065171}
-  - component: {fileID: 259065170}
   m_Layer: 0
   m_Name: Colour Block (2)
   m_TagString: Platform
@@ -483,34 +481,6 @@ Transform:
   m_Father: {fileID: 1988761225}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &259065170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259065168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 505464fcf43f38147bb42084bb91d09a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OriginalVersion: {fileID: 0}
---- !u!114 &259065171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259065168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef2c84dc01d9d91409c0f070f3577527, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1364007743}
-  speed: 3
-  isFloating: 0
 --- !u!50 &259065172
 Rigidbody2D:
   serializedVersion: 4
@@ -1828,7 +1798,7 @@ Transform:
   m_Children:
   - {fileID: 1818235067}
   m_Father: {fileID: 1679986739}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &752950966
 PrefabInstance:
@@ -2060,8 +2030,6 @@ GameObject:
   - component: {fileID: 855558620}
   - component: {fileID: 855558619}
   - component: {fileID: 855558618}
-  - component: {fileID: 855558617}
-  - component: {fileID: 855558616}
   m_Layer: 0
   m_Name: Colour Block (1)
   m_TagString: Platform
@@ -2083,34 +2051,6 @@ Transform:
   m_Father: {fileID: 1988761225}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &855558616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855558614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 505464fcf43f38147bb42084bb91d09a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OriginalVersion: {fileID: 0}
---- !u!114 &855558617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855558614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef2c84dc01d9d91409c0f070f3577527, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1364007743}
-  speed: 3
-  isFloating: 0
 --- !u!50 &855558618
 Rigidbody2D:
   serializedVersion: 4
@@ -2351,7 +2291,7 @@ Transform:
   - {fileID: 1031929557}
   - {fileID: 1782299922}
   m_Father: {fileID: 1679986739}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1031929556
 GameObject:
@@ -3477,6 +3417,7 @@ Transform:
   m_Children:
   - {fileID: 1056401503}
   - {fileID: 833094016}
+  - {fileID: 1988761225}
   - {fileID: 1937596027}
   - {fileID: 1963026447}
   - {fileID: 35316707}
@@ -3497,8 +3438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da9b822b5da504342a9d9f15baafd56d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BlackWord: {fileID: 0}
-  ColourWorld: {fileID: 0}
+  BlackWord: {fileID: 1937596026}
+  ColourWorld: {fileID: 1963026446}
   BlackWorldActive: 1
   ColourWorldActive: 0
 --- !u!1 &1680233965
@@ -3967,8 +3908,6 @@ GameObject:
   - component: {fileID: 1916077509}
   - component: {fileID: 1916077508}
   - component: {fileID: 1916077507}
-  - component: {fileID: 1916077506}
-  - component: {fileID: 1916077505}
   m_Layer: 0
   m_Name: Colour Block
   m_TagString: Platform
@@ -3990,34 +3929,6 @@ Transform:
   m_Father: {fileID: 1988761225}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1916077505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916077503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 505464fcf43f38147bb42084bb91d09a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OriginalVersion: {fileID: 0}
---- !u!114 &1916077506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916077503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef2c84dc01d9d91409c0f070f3577527, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1364007743}
-  speed: 3
-  isFloating: 0
 --- !u!50 &1916077507
 Rigidbody2D:
   serializedVersion: 4
@@ -4144,9 +4055,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1200277307}
-  - {fileID: 1988761225}
   m_Father: {fileID: 1679986739}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1963026446
 GameObject:
@@ -4178,7 +4088,7 @@ Transform:
   - {fileID: 2117480718}
   - {fileID: 34398485}
   m_Father: {fileID: 1679986739}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1969029806
 GameObject:
@@ -4312,15 +4222,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988761224}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1916077504}
   - {fileID: 855558615}
   - {fileID: 259065169}
-  m_Father: {fileID: 1937596027}
-  m_RootOrder: 1
+  m_Father: {fileID: 1679986739}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2011092414
 GameObject:
