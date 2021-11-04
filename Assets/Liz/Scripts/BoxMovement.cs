@@ -6,8 +6,6 @@ public class BoxMovement : MonoBehaviour
 {
     public GameObject player;
     
-
-    //private bool hasMoved = false;
     private bool triggerEntered = false;
 
     public float speed = 3;
