@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BlackWhite
   - Colour
+  - Platform
   layers:
   - Default
   - TransparentFX
