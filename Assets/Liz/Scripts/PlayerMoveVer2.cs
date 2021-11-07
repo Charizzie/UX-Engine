@@ -16,10 +16,16 @@ public class PlayerMoveVer2 : MonoBehaviour
 
     public Rigidbody2D PlayerRb;
 
+    //Animation Variables
+    public Animator Ani;
+    public SpriteRenderer SR;
+
     // Start is called before the first frame update
     void Start()
     {
         PlayerRb = GetComponent<Rigidbody2D>();
+        Ani = GetComponent<Animator>();
+        SR = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -30,12 +36,15 @@ public class PlayerMoveVer2 : MonoBehaviour
         currVelo = PlayerRb.velocity;
 
         isJumping = false;
+       
 
         if (Input.GetKeyDown(KeyCode.W))
         {
             isJumping = true;
-            hasJumped = false;            
+            hasJumped = false;
+            Ani.SetBool("IsJumping", true);
         }
+       
 
         if (moveHori != 0)
         {
@@ -46,6 +55,17 @@ public class PlayerMoveVer2 : MonoBehaviour
         {
             PlayerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
             //hasJumped = true;
+        }
+
+        Ani.SetFloat("Speed", Mathf.Abs(moveHori));
+
+        if (moveHori > 0.01f)
+        {
+            SR.flipX = true;
+        }
+        else
+        {
+            SR.flipX = false;
         }
     }
 /*
@@ -68,6 +88,7 @@ public class PlayerMoveVer2 : MonoBehaviour
         if (collision.collider.tag == "Platform")
         {
             isJumping = false;
+            Ani.SetBool("IsJumping", false);
         }
     }
 
@@ -77,6 +98,8 @@ public class PlayerMoveVer2 : MonoBehaviour
         if (collision.collider.tag == "Platform")
         {
             isJumping = true;
+
         }
     }
+
 }
