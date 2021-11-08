@@ -5,29 +5,36 @@ using UnityEngine;
 public class BoxMovement : MonoBehaviour
 {
     public GameObject player;
+<<<<<<< HEAD
     
     private bool triggerEntered = false;
 
     public float speed = 3;
+=======
+    public Rigidbody2D boxRb;
+       
+    //private bool triggerEntered = false;
+
+    public float speed = 10;
+>>>>>>> main
     public bool isFloating = false;
 
     void Start()
     {
-        
+        boxRb = GetComponent<Rigidbody2D>();
     }
 
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && triggerEntered == true)
+      /*  if (Input.GetKeyDown(KeyCode.Space) && triggerEntered == true)
         {
-            //moveobject
-            Vector3 move = new Vector3(+1, 0, 0);
-            gameObject.transform.position += move * Time.deltaTime * speed;            
-        }
+            Vector3 move = new Vector3(0, 0, 0);
+            gameObject.transform.position += move * Time.deltaTime * speed;
+        }*/
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+  /*  private void OnTriggerEnter2D(Collider2D other)
     {
         triggerEntered = true;        
     }
@@ -35,12 +42,17 @@ public class BoxMovement : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         triggerEntered = false;
-    }
+    }*/
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Platform")
         {
             isFloating = false;
+        }
+        if (collision.collider.tag == "Player")
+        {
+            Vector3 move = new Vector3(0, 0, 0);
+            gameObject.transform.position += move * Time.deltaTime * speed;
         }
     }
 
@@ -50,6 +62,10 @@ public class BoxMovement : MonoBehaviour
         if (collision.collider.tag == "Platform")
         {
             isFloating = true;
+        }
+        if (collision.collider.tag == "Player")
+        {
+            boxRb.velocity = Vector3.zero;
         }
     }
 }

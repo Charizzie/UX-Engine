@@ -4,7 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Box
+=======
+  - BlackWhite
+  - Colour
+  - Platform
+  - Box
+  - PressurePad
+  - Hazard
+>>>>>>> main
   layers:
   - Default
   - TransparentFX
