@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2030659975062613792}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 23.3, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.9034673, y: -0.19994926}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -110,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.3509622, y: 8.579999}
+  m_Size: {x: 3.3348286, y: 8.518051}
   m_EdgeRadius: 0
 --- !u!50 &2030659975062613798
 Rigidbody2D:
@@ -164,8 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddbbf5bd7e4eab41b13932e6c3347b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 75
-  jumpForce: 1850
+  speed: 25
+  jumpForce: 2000
   PlayerRb: {fileID: 2030659975062613798}
   Ani: {fileID: 2030659975062613799}
   SR: {fileID: 2030659975062613796}
