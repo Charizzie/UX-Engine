@@ -5,18 +5,11 @@ using UnityEngine;
 public class BoxMovement : MonoBehaviour
 {
     public GameObject player;
-<<<<<<< HEAD
-    
-    private bool triggerEntered = false;
-
-    public float speed = 3;
-=======
     public Rigidbody2D boxRb;
        
     //private bool triggerEntered = false;
 
     public float speed = 10;
->>>>>>> main
     public bool isFloating = false;
 
     void Start()
