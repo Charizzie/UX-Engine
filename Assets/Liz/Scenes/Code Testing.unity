@@ -2100,12 +2100,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2027557087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ddbbf5bd7e4eab41b13932e6c3347b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e68c80baf3acd9448cab3524222ceab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
-  jumpForce: 500
-  PlayerRb: {fileID: 2027557092}
+  speed: 10
+  jumpForce: 300
+  PlayerRb: {fileID: 0}
 --- !u!61 &2027557091
 BoxCollider2D:
   m_ObjectHideFlags: 0
