@@ -25,8 +25,9 @@ public class WorldSwitchPH : MonoBehaviour
 
             BlackWord.SetActive(BlackWorldActive = !BlackWorldActive);
             ColourWorld.SetActive(ColourWorldActive = !ColourWorldActive);
+            Debug.Log("Space pressed");
         }
     }
 
-   
+
 }
