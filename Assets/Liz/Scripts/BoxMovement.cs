@@ -47,6 +47,7 @@ public class BoxMovement : MonoBehaviour
             Vector3 move = new Vector3(0, 0, 0);
             gameObject.transform.position += move * Time.deltaTime * speed;
         }
+        
     }
 
 

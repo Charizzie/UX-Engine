@@ -10,6 +10,8 @@ public class PressurePad : MonoBehaviour
 
     public Transform Padpos;
     public Transform doorpos;
+
+    //Vector3 originalPos;
             
     public bool PadActive = false;
 
@@ -17,7 +19,7 @@ public class PressurePad : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //DoorOriginalPos = Door.transform.position;
+        //doorpos.position.y = OriginalPos;
     }
 
     // Update is called once per frame
@@ -31,8 +33,8 @@ public class PressurePad : MonoBehaviour
 
         if (PadActive == false) 
         {
-            Door.transform.position = new Vector3(doorpos.position.x, 0, doorpos.position.z);
-            //Pressurepad.transform.position = new Vector3(Padpos.position.x, transform.position.y, Padpos.position.z);
+            //Door.transform.position = originalPos;
+            Door.transform.position = new Vector3(doorpos.position.x, 1, doorpos.position.z);
         }
         
     }
@@ -53,19 +55,5 @@ public class PressurePad : MonoBehaviour
         }
     }
 
-    /* private void OnCollisionEnter2D(Collision2D collision)
-     {
-         if (collision.collider.tag == "Box")
-         {            
-             PadActive = true;
-         }
-     }
-
-     private void OnCollisionExit2D(Collision2D collision)
-     {
-         if (collision.collider.tag == "Box")
-         {
-             PadActive = false;            
-         }
-     }*/
+    
 }
