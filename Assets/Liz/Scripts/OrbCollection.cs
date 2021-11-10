@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class OrbCollection : MonoBehaviour
 {
-    //public bool hold = false;
+    public GameObject player;
     public bool pass = false;
+    OrbCheck orb;
+
+    void Start()
+    {
+        orb = player.GetComponent<OrbCheck>();
+    }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && pass == true)
         {
+            orb.HasOrb = true;
             Destroy(gameObject);
             Debug.Log("hold");
         }

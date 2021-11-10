@@ -8,7 +8,7 @@ public class OrbCheck : MonoBehaviour
     public bool Trigger = false;
 
     
-    private void Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && Trigger == true)
         {
@@ -21,6 +21,7 @@ public class OrbCheck : MonoBehaviour
         if (collision.gameObject.tag == "Orb")
         {
             Trigger = true;
+            Debug.Log("Trigger");
         }
     }
 

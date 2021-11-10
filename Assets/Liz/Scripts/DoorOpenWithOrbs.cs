@@ -21,7 +21,7 @@ public class DoorOpenWithOrbs : MonoBehaviour
     {
         if (orb.HasOrb == true)
             {
-                Debug.Log("whoop");
+                Debug.Log("doorcanopen");
             }
 
         if (orb.HasOrb == false)
@@ -34,7 +34,7 @@ public class DoorOpenWithOrbs : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && orb.HasOrb == true)
         {
-            Debug.Log("bonk");
+            Debug.Log("doorshouldopen");
             transform.position = new Vector3(doorpos.position.x, transform.position.y + 5, doorpos.position.z);
         }
     }
