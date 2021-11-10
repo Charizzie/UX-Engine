@@ -61,11 +61,11 @@ public class PlayerMoveVer2 : MonoBehaviour
 
         if (moveHori > 0.01f)
         {
-            SR.flipX = true;
+            gameObject.transform.localScale = new Vector3(-0.8f, 0.8f, -0.8f);
         }
         else
         {
-            SR.flipX = false;
+            gameObject.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
         }
     }
 /*
