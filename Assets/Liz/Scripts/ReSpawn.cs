@@ -24,11 +24,12 @@ public class ReSpawn : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Hazard")
         {
             Alive = false;
+            
         }
     }
 }
