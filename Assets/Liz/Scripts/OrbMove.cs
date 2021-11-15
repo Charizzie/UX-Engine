@@ -30,14 +30,14 @@ public class OrbMove : MonoBehaviour
     public IEnumerator floatingUp()
     {
         transform.position = new Vector3(transform.position.x, transform.position.y + 0.5f * Time.deltaTime, 0);
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.75f);
         floatUp = false;
     }
 
     public IEnumerator floatingDown()
     {
         transform.position = new Vector3 (transform.position.x, transform.position.y - 0.5f * Time.deltaTime, 0);
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.75f);
         floatUp = true;
     }
 }
