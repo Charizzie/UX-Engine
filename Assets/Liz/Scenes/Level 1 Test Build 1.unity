@@ -223,7 +223,7 @@ PrefabInstance:
     - target: {fileID: 1438621263300058366, guid: fc9e06200503fa84e8890f3f58f7579f, type: 3}
       propertyPath: spawnpoint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1249891293}
     - target: {fileID: 2030659975062613792, guid: fc9e06200503fa84e8890f3f58f7579f, type: 3}
       propertyPath: m_Name
       value: Player (1)
@@ -688,7 +688,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47970196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -240.5, y: 271.8, z: -38}
+  m_LocalPosition: {x: -290.9, y: 271.8, z: -38}
   m_LocalScale: {x: 8.71956, y: 8.71956, z: 8.71956}
   m_Children: []
   m_Father: {fileID: 2001908848}
@@ -2543,7 +2543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423596392}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -132.1, y: 255.1, z: 0}
+  m_LocalPosition: {x: -199.61, y: 255.1, z: 0}
   m_LocalScale: {x: 2.5374117, y: 2.9177697, z: 2.5374117}
   m_Children: []
   m_Father: {fileID: 25951384}
@@ -2625,7 +2625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430375031}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -73.3, y: 271.8, z: -38}
+  m_LocalPosition: {x: -123.6, y: 271.8, z: -38}
   m_LocalScale: {x: 8.71956, y: 8.71956, z: 8.71956}
   m_Children: []
   m_Father: {fileID: 2001908848}
@@ -3265,6 +3265,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2006935619607035835, guid: 8f2beefeb098e2a49801e1de1cfdff88, type: 3}
       propertyPath: m_Name
+      value: Hazard
+      objectReference: {fileID: 0}
+    - target: {fileID: 2006935619607035835, guid: 8f2beefeb098e2a49801e1de1cfdff88, type: 3}
+      propertyPath: m_TagString
       value: Hazard
       objectReference: {fileID: 0}
     - target: {fileID: 7071371310685645656, guid: 8f2beefeb098e2a49801e1de1cfdff88, type: 3}
@@ -4298,7 +4302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900821091}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -127.69, y: 299.9, z: 0}
+  m_LocalPosition: {x: -172.1, y: 296.5, z: 0}
   m_LocalScale: {x: 2.9548106, y: 2.9548106, z: 2.9548106}
   m_Children: []
   m_Father: {fileID: 25951384}
@@ -6177,6 +6181,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2146304803300417058, guid: 0b492c5551d8dbc468b06a07185fe57a, type: 3}
   m_PrefabInstance: {fileID: 1237057991}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1249891293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3337918977462217394, guid: c7715175ed162de4594c595a2fb5433a, type: 3}
+  m_PrefabInstance: {fileID: 7951541193200161589}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1255602648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7471,6 +7480,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2006935619607035835, guid: 8f2beefeb098e2a49801e1de1cfdff88, type: 3}
       propertyPath: m_Name
+      value: Hazard
+      objectReference: {fileID: 0}
+    - target: {fileID: 2006935619607035835, guid: 8f2beefeb098e2a49801e1de1cfdff88, type: 3}
+      propertyPath: m_TagString
       value: Hazard
       objectReference: {fileID: 0}
     - target: {fileID: 7071371310685645656, guid: 8f2beefeb098e2a49801e1de1cfdff88, type: 3}
