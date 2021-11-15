@@ -11,8 +11,8 @@ public class PlayerMovev2noAni : MonoBehaviour
     private float moveVert;
     private Vector2 currVelo;
 
-    private bool isJumping = false;
-    private bool hasJumped = false;
+    public bool isJumping = false;
+    public bool isGrounded = true;
 
     public Rigidbody2D PlayerRb;
 
@@ -32,13 +32,14 @@ public class PlayerMovev2noAni : MonoBehaviour
         currVelo = PlayerRb.velocity;
 
         isJumping = false;
+        isGrounded = true;
 
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && !isJumping)
         {
+            PlayerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
             isJumping = true;
-            hasJumped = false;
-            
+            isGrounded = false;            
         }
 
 
@@ -46,22 +47,21 @@ public class PlayerMovev2noAni : MonoBehaviour
         {
             PlayerRb.velocity = new Vector2(moveHori * speed, currVelo.y);
         }
-
-        if (isJumping && !hasJumped)
-        {
-            PlayerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
-            
-        }
+       
        
     }
    
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.collider.tag == "Platform")
         {
             isJumping = false;
-            
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;            
         }
     }
 
@@ -71,7 +71,7 @@ public class PlayerMovev2noAni : MonoBehaviour
         if (collision.collider.tag == "Platform")
         {
             isJumping = true;
-
+            isGrounded = false;
         }
     }
 

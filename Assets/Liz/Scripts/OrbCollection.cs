@@ -7,6 +7,7 @@ public class OrbCollection : MonoBehaviour
     public GameObject player;
     public bool pass = false;
     OrbCheck orb;
+    public bool collect = false;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class OrbCollection : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && pass == true)
         {
             orb.HasOrb = true;
+            collect = true;
             Destroy(gameObject);
             Debug.Log("hold");
         }
@@ -27,7 +29,7 @@ public class OrbCollection : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-           pass = true;
+            pass = true;
         }
     }
 
