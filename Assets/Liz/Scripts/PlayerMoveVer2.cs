@@ -11,20 +11,19 @@ public class PlayerMoveVer2 : MonoBehaviour
     private float moveVert;
     private Vector2 currVelo;
 
-    /* public bool isJumping = false;
-     public bool hasJumped = false;
-     public bool hasDoubleJumped = false;*/
-    int numOfJumps = 2;
-    public int MaxNumOfJumps = 2;
+   
+    int numOfJumps = 1;
+    public int MaxNumOfJumps = 1;
+    bool isAirborne = false;
+    public PhysicsMaterial2D GroundedMat;
+    public PhysicsMaterial2D AirborneMat;
 
     public Rigidbody2D PlayerRb;
 
     //Animation Variables
     public Animator Ani;
     public SpriteRenderer SR;
-    bool isAirborne = false;
-    public PhysicsMaterial2D GroundedMat;
-    public PhysicsMaterial2D AirborneMat;
+   
 
     void Start()
     {
